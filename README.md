@@ -28,3 +28,8 @@ npm start
 ## РЕШЕНИЕ
 1. В файле index.js добавляем фигурные скобки в импорт, так как в map.js нет export default.
 2. В файле index.css добавляем для селекторов html, body, #map высоту 100%.
+3. Чтобы задать опции одиночным объектам обратимся к дочерним коллекциям ObjectManager
+objectManager.objects.options.set('preset', 'islands#greenDotIcon');
+И добавим строчку
+myMap.geoObjects.add(objectManager);
+4. В файле mappers.js перепутаны местами координаты, из-за чего базовые станции генерились в Иране, а не в Москве.
