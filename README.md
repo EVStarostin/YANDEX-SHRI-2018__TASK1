@@ -34,3 +34,4 @@ objectManager.objects.options.set('preset', 'islands#greenDotIcon');
 myMap.geoObjects.add(objectManager);
 4. В файле mappers.js перепутаны местами координаты, из-за чего базовые станции генерились в Иране, а не в Москве.
 5. В файле details.js для методов build и clear использовались стрелочные функции () => {}, а функции-стрелки не имеют своего this.  
+6. В файле chart.js убрал свойство max: 0 по оси Y.
