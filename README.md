@@ -34,17 +34,17 @@
 
 7. При клике на маркере появляется tool-tip с информацией, но график не отображается.  
 Открываем документацию к **библиотеке chart.js** изучаем и видим, что у нас в файле *chart.js*  
-при инициализации опциях на оси Y ограничение max: 0
-`const chart = new Chart(ctx, {`
-`  ...`
-`  options: {`
-`      ...`
-`      scales: {`
-`          xAxes: [{ ticks: { display: false } }],`
-`          yAxes: [{ ticks: { beginAtZero: true, **max: 0** } }]`
-`      }`
-`  }`
-`});`
+при инициализации опциях **на оси Y ограничение *max: 0***
+`const chart = new Chart(ctx, {`  
+`  ...`  
+`  options: {`  
+`      ...`  
+`      scales: {`  
+`          xAxes: [{ ticks: { display: false } }],`  
+`          yAxes: [{ ticks: { beginAtZero: true, **max: 0** } }]`  
+`      }`  
+`  }`  
+`});`  
 Убираем **max: 0**, теперь все прекрасно работает, график отображается.  
 
 
