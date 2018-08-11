@@ -1,6 +1,6 @@
 # Задание 1 — найди ошибки
 
-### РЕШЕНИЕ
+## РЕШЕНИЕ
 
 1. Устанавливаем пакеты из npm c помощью команды в терминале `npm i`. Запускаем webpack-dev-server `npm start`.  
 Видим предупреждение `"export 'default' (imported as 'initMap') was not found in './map'`,  
